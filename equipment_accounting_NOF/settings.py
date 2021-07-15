@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'switch_cabinets',
     'stations',
     'signals',
-    'factory_equipment',
+    'factory_equipments',
 ]
 
 MIDDLEWARE = [
