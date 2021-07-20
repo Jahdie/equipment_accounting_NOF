@@ -3,4 +3,5 @@ from django.views.generic import ListView
 
 
 class LocationsListView(ListView):
-    pass
+    model = Locations
+    template_name = 'locations/base.html'
