@@ -15,10 +15,8 @@ class Signals(BaseDictionaryModelAbstract):
     signal_type = models.ForeignKey('SignalTypes', on_delete=models.PROTECT, null=True, verbose_name='Тип сигнала')
     module = models.ForeignKey('stations.ModuleInStations', on_delete=models.PROTECT, null=True,
                                verbose_name='Модуль в станции')
-    equipment_type = models.ForeignKey('factory_equipments.EquipmentTypes', on_delete=models.PROTECT, null=True,
-                                       verbose_name='Тип оборудования')
-    equipment_name = models.ForeignKey('factory_equipments.EquipmentNames', on_delete=models.PROTECT, null=True,
-                                       verbose_name='Наименование оборудования')
+    equipment = models.ForeignKey('factory_equipments.Equipments', on_delete=models.PROTECT, null=True,
+                                  verbose_name='Оборудование')
 
     class Meta:
         verbose_name = 'Сигнал'

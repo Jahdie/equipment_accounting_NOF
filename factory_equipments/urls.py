@@ -4,5 +4,5 @@ from .views import FactoryEquipmentListView
 app_name = 'factory_equipments'
 
 urlpatterns = [
-    path('', FactoryEquipmentListView, name='index'),
+    path('', FactoryEquipmentListView.as_view(), name='index'),
 ]

@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import *
 
-# Register your models here.
+MODELS_LIST = [Locations, Productions, Workshops, Compartments]
+
+admin.site.register(MODELS_LIST)
