@@ -41,7 +41,7 @@ INSTALLED_APPS = [
 
     'locations',
     'switch_cabinets',
-    'stations',
+    'plc',
     'signals',
     'factory_equipments',
 ]

@@ -3,4 +3,5 @@ from django.views.generic import ListView
 
 
 class SwitchCabinetsListView(ListView):
-    pass
+    model = SwitchCabinets
+    template_name = 'switch_cabinets/base.html'

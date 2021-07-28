@@ -25,6 +25,7 @@ class Locations(BaseModelAbstract):
                                    related_name='Productions')
     workshop = models.ForeignKey('Workshops', on_delete=models.PROTECT, null=True, verbose_name='Цех')
     compartment = models.ForeignKey('Compartments', on_delete=models.PROTECT, null=True, verbose_name='Участок')
+    phone_number = models.CharField(max_length=15, verbose_name='Номер телефона', blank=True)
     photo_location = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
 
     class Meta:

@@ -1,3 +1,6 @@
 from django.contrib import admin
+from switch_cabinets.models import *
 
-# Register your models here.
+MODELS_LIST = [SwitchModels, SwitchPorts, Switches, SwitchCabinets]
+
+admin.site.register(MODELS_LIST)
