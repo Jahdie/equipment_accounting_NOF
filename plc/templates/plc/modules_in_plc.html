@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Наименование</th>
+      <th scope="col">Rack</th>
+      <th scope="col">Slot</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for module in modules_in_plc %}
+        <tr>
+            <td><a href="#">{{ module.module_model }}</a></td>
+            <td>{{ module.rack }}</td>
+            <td>{{ module.slot }}</td>
+        </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

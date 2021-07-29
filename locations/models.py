@@ -28,6 +28,9 @@ class Locations(BaseModelAbstract):
     phone_number = models.CharField(max_length=15, verbose_name='Номер телефона', blank=True)
     photo_location = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
 
+    # def __str__(self):
+    #     return self.workshop_id
+
     class Meta:
         verbose_name = 'Местоположение оборудования'
         verbose_name_plural = 'Местоположения оборудования'

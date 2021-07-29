@@ -15,12 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls.static import static
+from django.conf import settings
+from locations.views import LocationsListView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', LocationsListView.as_view(), name='index'),
     path('locations/', include('locations.urls', namespace='locations')),
     path('plc/', include('plc.urls', namespace='plc')),
     path('switch_cabinets/', include('switch_cabinets.urls', namespace='switch_cabinets')),
     path('signals/', include('signals.urls', namespace='signals')),
     path('factory_equipments/', include('factory_equipments.urls', namespace='factory_equipment')),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,824 @@
+[
+  {
+    "model": "locations.productions",
+    "pk": 1,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T13:19:42.541Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T13:19:42.541Z",
+      "name": "НОФ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.workshops",
+    "pk": 1,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:42:56.972Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:42:56.972Z",
+      "name": "ЦИСП",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.workshops",
+    "pk": 2,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:42:56.987Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:42:56.987Z",
+      "name": "УСНК",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.workshops",
+    "pk": 3,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:42:56.987Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:42:56.987Z",
+      "name": "РМЦ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.workshops",
+    "pk": 4,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:42:56.987Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:42:56.987Z",
+      "name": "САП",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.workshops",
+    "pk": 5,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:42:56.987Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:42:56.987Z",
+      "name": "ПНС-3",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.workshops",
+    "pk": 6,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:42:56.987Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:42:56.987Z",
+      "name": "ОЦО",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.workshops",
+    "pk": 7,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:42:56.987Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:42:56.987Z",
+      "name": "АБК",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.workshops",
+    "pk": 8,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:42:56.987Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:42:56.987Z",
+      "name": "ДЦ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.workshops",
+    "pk": 9,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:42:56.987Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:42:56.987Z",
+      "name": "ИФЦ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.workshops",
+    "pk": 10,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:42:56.987Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:42:56.987Z",
+      "name": "Управление",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.workshops",
+    "pk": 11,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:42:56.987Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:42:56.987Z",
+      "name": "ЦГТС",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.workshops",
+    "pk": 12,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:42:56.987Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:42:56.987Z",
+      "name": "Нординвэс",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 160,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.048Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.048Z",
+      "name": "Операторная 4 Секции",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 161,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.094Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.094Z",
+      "name": "1 Секция",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 162,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.110Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.110Z",
+      "name": "ОТБ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 163,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.110Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.110Z",
+      "name": "Комплекс Нельсон 4",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 164,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.110Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.110Z",
+      "name": "Кроссовая",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 165,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.110Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.110Z",
+      "name": "ПСУ 2F",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 166,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.110Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.110Z",
+      "name": "Реагентное отделение",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 167,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.110Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.110Z",
+      "name": "2 этаж(спецчасть)",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 168,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.110Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.110Z",
+      "name": "5 Дамба",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 169,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.126Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.126Z",
+      "name": "Техотдел",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 170,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.126Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.126Z",
+      "name": "УПДФ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 171,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.126Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.126Z",
+      "name": "Управление",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 172,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.126Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.126Z",
+      "name": "ОМД",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 173,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.126Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.126Z",
+      "name": "ПМУ Warman",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 174,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.126Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.126Z",
+      "name": "2 Секция",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 175,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.126Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.126Z",
+      "name": "Vmware",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 176,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.141Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.141Z",
+      "name": "НОВ3 ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 177,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.141Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.141Z",
+      "name": "Комплекс Нельсон 1",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 178,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.141Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.141Z",
+      "name": "Шкаф №2 (N2_HZA2_53-PA1_3-1_17-2_3)",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 179,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.141Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.141Z",
+      "name": "ИФЦ ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 180,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.141Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.141Z",
+      "name": "Сгущение",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 181,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.141Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.141Z",
+      "name": "4 Секция",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 182,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.141Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.141Z",
+      "name": "Технадзор",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 183,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.157Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.157Z",
+      "name": "РЛ Курьер",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 184,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.157Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.157Z",
+      "name": "Селекция",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 185,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.157Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.157Z",
+      "name": "Операторная",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 186,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.157Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.157Z",
+      "name": "0-Пикет",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 187,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.157Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.157Z",
+      "name": "Помещение КИП",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 188,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.157Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.157Z",
+      "name": "ЛЭТА",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 189,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.157Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.157Z",
+      "name": "АБК Лебяжье",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 190,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.173Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.173Z",
+      "name": "Помещение ЦПД",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 191,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.173Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.173Z",
+      "name": "ремпролет (шкаф кип)",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 192,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.173Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.173Z",
+      "name": "КИПиА",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 193,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.173Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.173Z",
+      "name": "Ni-отстойник",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 194,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.173Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.173Z",
+      "name": "Операторная Измельчения",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 195,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.173Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.173Z",
+      "name": "Рем площадка для кранов",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 196,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.188Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.188Z",
+      "name": "Комплекс Нельсон 3",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 197,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.188Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.188Z",
+      "name": "Ремпролёт",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 198,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.188Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.188Z",
+      "name": "Диспетчерская",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 199,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.188Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.188Z",
+      "name": "5 Секция",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 200,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.188Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.188Z",
+      "name": "Серверная",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 201,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.188Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.188Z",
+      "name": "2 этаж ПСУ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 202,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.188Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.188Z",
+      "name": "ОКД",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 203,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.204Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.204Z",
+      "name": "1 этаж",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 204,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.204Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.204Z",
+      "name": "ОМД насосная ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 205,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.204Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.204Z",
+      "name": "Операторная ЦГТС",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 206,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.204Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.204Z",
+      "name": "Операторная ОМД",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 207,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.204Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.204Z",
+      "name": "ЦПД",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 208,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.204Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.204Z",
+      "name": "Курьер",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 209,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.204Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.204Z",
+      "name": "3 Секция",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 210,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.204Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.204Z",
+      "name": "НОВ3",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 211,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.204Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.204Z",
+      "name": "3 этаж ПНС-3",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.compartments",
+    "pk": 212,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:47:35.219Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:47:35.219Z",
+      "name": "Комплекс Нельсон 2",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.locations",
+    "pk": 1,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T13:20:49.248Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T13:20:49.248Z",
+      "production": 1,
+      "workshop": 9,
+      "compartment": 161,
+      "phone_number": "26-55-60",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "locations.locations",
+    "pk": 2,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:47:19.320Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:47:19.320Z",
+      "production": 1,
+      "workshop": 4,
+      "compartment": 164,
+      "phone_number": "26-58-73",
+      "photo_location": ""
+    }
+  }
+]

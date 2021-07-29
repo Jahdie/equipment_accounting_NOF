@@ -1,0 +1,2171 @@
+[
+  {
+    "model": "factory_equipments.equipmenttypes",
+    "pk": 1,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:16:01.582Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:16:01.582Z",
+      "name": "Станция автоматизации",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmenttypes",
+    "pk": 2,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:09:47.355Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:09:47.356Z",
+      "name": "Флотомашина",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmenttypes",
+    "pk": 3,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:09:56.124Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:09:56.124Z",
+      "name": "Насос",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 11,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.828Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.828Z",
+      "name": "VMSE 6SL3 для связи с AC9",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 12,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.832Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.832Z",
+      "name": "IP камера ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 13,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.833Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.833Z",
+      "name": "Антена Ni_отстойник - НОФ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 14,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.835Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.835Z",
+      "name": "VMSE 6SL2 для связи с AC9",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 15,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.836Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.836Z",
+      "name": "Server esxi251",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 16,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.837Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.837Z",
+      "name": "Server esxi254",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 17,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.838Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.838Z",
+      "name": "УПС",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 18,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.839Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.839Z",
+      "name": "Server",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 19,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.840Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.840Z",
+      "name": "Server ESXI",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 20,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.841Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.841Z",
+      "name": "MOXA",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 21,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.843Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.843Z",
+      "name": "Cisco Aeronet 1300",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 22,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.844Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.844Z",
+      "name": "Server Store",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 23,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.846Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.846Z",
+      "name": "PC Linux",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 24,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.847Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.847Z",
+      "name": "QuickPanel+",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 25,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.848Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.848Z",
+      "name": "VMSE 6SL1 для связи с AMS",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 26,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.849Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.849Z",
+      "name": "CISCO",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 27,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.851Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.851Z",
+      "name": "Антена на НОФ с ПНС 3",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 28,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.852Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.852Z",
+      "name": "VirtualPC",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 29,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.853Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.853Z",
+      "name": "MOXA ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 30,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.855Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.855Z",
+      "name": "QuickPanel",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 31,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.856Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.856Z",
+      "name": "PLC",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 32,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.857Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.857Z",
+      "name": "VMSE 6SL1 для связи с AC9",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 33,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.858Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.858Z",
+      "name": "Антена  НОФ - Ni_отстойник",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 34,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.860Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.860Z",
+      "name": "Антена на ПНС 3 с НОФ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 35,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.860Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.860Z",
+      "name": "PC",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 36,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.861Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.861Z",
+      "name": "VMSE 6SL2 для связи с AMS",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 37,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.863Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.863Z",
+      "name": "ЛСО",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 38,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.864Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.864Z",
+      "name": "notebook",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 39,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.865Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.865Z",
+      "name": "Server esxi252",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 40,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.867Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.867Z",
+      "name": "Server esxi253",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 41,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.867Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.867Z",
+      "name": "Видеорегистратор",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.devicetypes",
+    "pk": 42,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:00:23.869Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:00:23.869Z",
+      "name": "nPort",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 27,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.235Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.235Z",
+      "name": "Нагнетатель 2",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 28,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.251Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.251Z",
+      "name": "Насосная установка ДЦ ПМУ 1",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 29,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.251Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.251Z",
+      "name": "Сгуститель",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 30,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.251Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.251Z",
+      "name": "Дублирующий контроллер",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 31,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.251Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.251Z",
+      "name": "Видеосервер",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 32,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.251Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.251Z",
+      "name": "ШКК резервный",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 33,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.251Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.251Z",
+      "name": "насосная установка ИФЦ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 34,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.251Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.251Z",
+      "name": "Панель AC19",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 35,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.251Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.251Z",
+      "name": "Насосная установка ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 36,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.267Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.267Z",
+      "name": "КРД-1",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 37,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.314Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.314Z",
+      "name": "Контроллер Шлаков Селекция",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 38,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.314Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.314Z",
+      "name": "Станция AC1",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 39,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.314Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.314Z",
+      "name": "Панель Warman",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 40,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.314Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.314Z",
+      "name": "Панель AC17",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 41,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.314Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.314Z",
+      "name": "ШУН11.1-11.3",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 42,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.329Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.329Z",
+      "name": "Мельница",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 43,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.329Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.329Z",
+      "name": "Ф1 (установки Доберсек вкр. руд)",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 44,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.329Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.329Z",
+      "name": "ШУН1-3",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 45,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.329Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.329Z",
+      "name": "RLPK",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 46,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.329Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.329Z",
+      "name": "ШУН2-1;2-2",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 47,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.329Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.329Z",
+      "name": "ШУН4.1.1",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 48,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.329Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.329Z",
+      "name": "ШУГ КРД-1",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 49,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.345Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.345Z",
+      "name": "ШУН5.1.1",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 50,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.345Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.345Z",
+      "name": "Станция AC4",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 51,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.345Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.345Z",
+      "name": "Сервер виртуализации ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 52,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.345Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.345Z",
+      "name": "ГЦУ 1-07",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 53,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.345Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.345Z",
+      "name": "ГЦУ 2-17",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 54,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.345Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.345Z",
+      "name": "Инженерная станция С. 6-3",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 55,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.360Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.360Z",
+      "name": "Панель AC15",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 56,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.360Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.360Z",
+      "name": "PLC Warman",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 57,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.360Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.360Z",
+      "name": "крупное дробление",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 58,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.360Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.360Z",
+      "name": "3 Питатель",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 59,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.360Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.360Z",
+      "name": "Насосная установка ДЦ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 60,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.360Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.360Z",
+      "name": "Панель оператора 6SL4",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 61,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.360Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.360Z",
+      "name": "Нагнетатель 5",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 62,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.360Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.360Z",
+      "name": "Инженерная станция С. 6-1",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 63,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.360Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.360Z",
+      "name": "ШУС КРД-1",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 64,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.360Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.360Z",
+      "name": "Панель AC16",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 65,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.376Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.376Z",
+      "name": "Нагнетатель 3",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 66,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.376Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.376Z",
+      "name": "Панель AC24",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 67,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.376Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.376Z",
+      "name": "Нагнетатель 4",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 68,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.376Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.376Z",
+      "name": "контроллер реагентных столов 1 секции",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 69,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.376Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.376Z",
+      "name": "Панель AC25",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 70,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.376Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.376Z",
+      "name": "Контроллер ЛК 3,4 (Весы)",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 71,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.376Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.376Z",
+      "name": "Контроллер АГОР CMM",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 72,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.376Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.376Z",
+      "name": "ш\\м 2-5",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 73,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.376Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.376Z",
+      "name": "Сервер виртуализации",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 74,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.376Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.376Z",
+      "name": "Ф/М 0-4",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 75,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.376Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.376Z",
+      "name": "Мельницы 4-1, 4-2, 4-3",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 76,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.376Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.376Z",
+      "name": "Axis стоит в операторной крупного дробления",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 77,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.376Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.376Z",
+      "name": "насосная ДЦ (крупное и среднее дроб.)",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 78,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.392Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.392Z",
+      "name": "Панель AC21",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 79,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.392Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.392Z",
+      "name": "Нагнетатель 1",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 80,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.392Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.392Z",
+      "name": "НУ2",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 81,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.392Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.392Z",
+      "name": "насосная установка Доберсек ОМД 1",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 82,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.392Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.392Z",
+      "name": "Warman",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 83,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.392Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.392Z",
+      "name": "Панель AC22",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 84,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.392Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.392Z",
+      "name": "Гранулометр медистых руд (4F)",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 85,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.392Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.392Z",
+      "name": "Контроллер АГОР панель",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 86,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.392Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.392Z",
+      "name": "ШУД КРД-2 (KRD-700-100Norilsk_en)",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 87,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.392Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.392Z",
+      "name": "Серверная комната ЛЭТА",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 88,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.392Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.392Z",
+      "name": "ШУН1-1",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 89,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.392Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.392Z",
+      "name": "ПЛК 7 Дробилки ОМД",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 90,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.392Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.392Z",
+      "name": "Станция AC3",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 91,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.407Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.407Z",
+      "name": "КМДТ №8",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 92,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.407Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.407Z",
+      "name": "насосная ДЦ (мелкое дробление)",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 93,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.407Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.407Z",
+      "name": "Панель AC18",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 94,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.407Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.407Z",
+      "name": "Контроллер приготовления магнафлока",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 95,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.407Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.407Z",
+      "name": "Станция AC2",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 96,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.407Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.407Z",
+      "name": "Панель AC23",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 97,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.407Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.407Z",
+      "name": "Дополнительный ввод/вывод",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 98,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.407Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.407Z",
+      "name": "Точка ОТК 0-9 (Нельсон 2)",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 99,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.407Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.407Z",
+      "name": "Инженерная станция С. 6-4",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 100,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.407Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.407Z",
+      "name": "Панель AC20",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 101,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.407Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.407Z",
+      "name": "ШУД КРД-1",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 102,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.407Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.407Z",
+      "name": "Контроллер АГОР 2 корзина",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 103,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.423Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.423Z",
+      "name": "ЛСО",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 104,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.423Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.423Z",
+      "name": "ШУГ КРД-2 (KRD-700-100Norilsk_en)",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 105,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.423Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.423Z",
+      "name": "ПУ насосная установка ИФЦ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 106,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.423Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.423Z",
+      "name": "Контроллер АГОР процессор",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 107,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.423Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.423Z",
+      "name": "Станция AC6",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 108,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.423Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.423Z",
+      "name": "Мониторинг",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 109,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.423Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.423Z",
+      "name": "АСКУЭ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 110,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.423Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.423Z",
+      "name": "Датапанель С. 6-3",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 111,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.423Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.423Z",
+      "name": "ГЦУ 2-19",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 112,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.423Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.423Z",
+      "name": "ШКК",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 113,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.423Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.423Z",
+      "name": "Точка ОТК 0-8 (Нельсон 1)",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 114,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.423Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.423Z",
+      "name": "Питатель №5",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 115,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.423Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.423Z",
+      "name": "Файловый сервер",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 116,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.439Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.439Z",
+      "name": "ШУН1-2",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 117,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.439Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.439Z",
+      "name": "Реагентные столы 2й секции",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 118,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.439Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.439Z",
+      "name": "Станция AC5",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 119,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.439Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.439Z",
+      "name": "Радиомост",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 120,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.439Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.439Z",
+      "name": "Ф/М 4-1",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 121,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.439Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.439Z",
+      "name": "Хранилище",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 122,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.439Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.439Z",
+      "name": "Сервер проекта",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 123,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.439Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.439Z",
+      "name": "грохот ОМД",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 124,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.439Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.439Z",
+      "name": "Контроллер пробоотбора",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 125,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.439Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.439Z",
+      "name": "Инженерная станция С. 6-2",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 126,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.439Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.439Z",
+      "name": "Точка ОТК 0-7 и ОТК 0-5 (Нельсон 3)",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 127,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.439Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.439Z",
+      "name": "ГЦУ 1-10",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 128,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.439Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.439Z",
+      "name": "Преобразователь интерфейсов",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 129,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.439Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.439Z",
+      "name": "Станция AC9",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 130,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.454Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.454Z",
+      "name": "ШУС КРД-2 (KRD-700-100Norilsk_en)",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 131,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.454Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.454Z",
+      "name": "Станция AC8",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 132,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.454Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.454Z",
+      "name": "Измельчение извести",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 133,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.454Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.454Z",
+      "name": "Контроллер ввода-вывода",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 134,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.454Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.454Z",
+      "name": "ШУН3-1;3-2",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 135,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.454Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.454Z",
+      "name": "F3 (установки Доберсек)",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 136,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.454Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.454Z",
+      "name": "Панель AC26",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 137,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.454Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.454Z",
+      "name": "Станция AC7",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 138,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.454Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.454Z",
+      "name": "Сервер бэкапов",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 139,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:09:29.454Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:09:29.454Z",
+      "name": "грохот №8",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 140,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:11:56.892Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:11:56.892Z",
+      "name": "Ф/М 1-10",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 141,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:12:38.614Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:12:38.614Z",
+      "name": "Г/Ц 1-59",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipmentnames",
+    "pk": 142,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:25:03.417Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:25:03.417Z",
+      "name": "Ф/М 1-7",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 1,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.655Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.655Z",
+      "name": "Питатель №5",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 2,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.655Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.655Z",
+      "name": "KRD-700-100Norilsk",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 3,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.655Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.655Z",
+      "name": "Dobersek",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 4,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.655Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.655Z",
+      "name": "Переработки Шлаков Селекция",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 5,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.671Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.671Z",
+      "name": "Грохочение",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 6,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.671Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.671Z",
+      "name": "Proscon 2100",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 7,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.671Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.671Z",
+      "name": "Насосная установка ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 8,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.671Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.671Z",
+      "name": "Сгущение",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 9,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.671Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.671Z",
+      "name": "КМД2201",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 10,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.671Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.671Z",
+      "name": "Измельчения",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 11,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.671Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.671Z",
+      "name": "АСКУЭ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 12,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.671Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.671Z",
+      "name": "КМДТ №7",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 13,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.671Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.671Z",
+      "name": "Насосная установка ДЦ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 14,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.671Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.671Z",
+      "name": "NOV3",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 15,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.671Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.671Z",
+      "name": "3 Питатель",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 16,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.671Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.671Z",
+      "name": "Система подогрева сливов сгустителей ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 17,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.671Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.671Z",
+      "name": "КРД-1",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 18,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.671Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.671Z",
+      "name": "DBS_NEW",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 19,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.687Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.687Z",
+      "name": "насосная установка ",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 20,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.687Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.687Z",
+      "name": "Warman",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 21,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.687Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.687Z",
+      "name": "КМД2200",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 22,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.687Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.687Z",
+      "name": "Оборотное водоснабжение",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 23,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.687Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.687Z",
+      "name": "Флотация",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 24,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.687Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.687Z",
+      "name": "ENGICO",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 25,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.687Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.687Z",
+      "name": "АС Коммерческого учёта электроэнергии",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.automationcomplex",
+    "pk": 26,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T09:04:50.687Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T09:04:50.687Z",
+      "name": "АСКУЭ?",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "factory_equipments.equipments",
+    "pk": 1,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:32:46.095Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:32:46.095Z",
+      "equipment_name": 142,
+      "equipment_type": 2,
+      "automation_complex": 23,
+      "device_type": 31,
+      "location": 1
+    }
+  },
+  {
+    "model": "factory_equipments.equipments",
+    "pk": 2,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:33:16.900Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:33:16.900Z",
+      "equipment_name": 141,
+      "equipment_type": 3,
+      "automation_complex": 23,
+      "device_type": 31,
+      "location": 1
+    }
+  },
+  {
+    "model": "factory_equipments.equipments",
+    "pk": 3,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:33:41.142Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:33:41.142Z",
+      "equipment_name": 140,
+      "equipment_type": 2,
+      "automation_complex": 23,
+      "device_type": 31,
+      "location": 1
+    }
+  }
+]
