@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import *
 
-MODELS_LIST = [Locations, Productions, Workshops, Compartments]
+MODELS_LIST = [Productions, Workshops, Compartments, Locations]
 
 admin.site.register(MODELS_LIST)

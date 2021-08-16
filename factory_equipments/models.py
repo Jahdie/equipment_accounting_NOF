@@ -40,6 +40,7 @@ class Equipments(BaseModelAbstract):
                                            verbose_name='Комплекс автоматизации')
     device_type = models.ForeignKey('DeviceTypes', on_delete=models.SET_NULL, null=True,
                                     verbose_name='Тип устройства')
+    plc_name = models.ForeignKey('plc.PLC', on_delete=models.SET_NULL, null=True)
     location = models.ForeignKey('locations.Locations', on_delete=models.PROTECT, null=True,
                                  verbose_name='Местоположение')
 

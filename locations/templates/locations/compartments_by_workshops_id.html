@@ -1,0 +1,15 @@
+<div class="accordion accordion-flush" id="accordionFlushExample2">
+    {% for location in locations %}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading{{ compartment.pk }}">
+                <div class="workshops">
+                    <button id="{{ location.compartment.pk }}" class="accordion-button collapsed" type="button">
+                        {{ location.compartment.name }}
+                    </button>
+                </div>
+
+            </h2>
+        </div>
+
+    {% endfor %}
+</div>

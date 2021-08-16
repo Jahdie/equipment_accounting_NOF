@@ -1,6 +1,7 @@
 from django.db import models
 from equipment_accounting_NOF.models import BaseModelAbstract, BaseDictionaryModelAbstract
 from locations.models import Locations
+from factory_equipments.models import DeviceTypes
 
 
 class ModuleInPLC(BaseModelAbstract):
@@ -30,28 +31,24 @@ class PLC(BaseDictionaryModelAbstract):
 
 
 class ControllerFamilies(BaseDictionaryModelAbstract):
-
     class Meta:
         verbose_name = 'Семейство контроллеров'
         verbose_name_plural = 'Семейства контроллеров'
 
 
 class ModuleModels(BaseDictionaryModelAbstract):
-
     class Meta:
         verbose_name = 'Модель модуля'
         verbose_name_plural = 'Модели модулей'
 
 
 class RackModels(BaseDictionaryModelAbstract):
-
     class Meta:
         verbose_name = 'Модель Rack'
         verbose_name_plural = 'Модели Rack'
 
 
 class ModuleTypes(BaseDictionaryModelAbstract):
-
     class Meta:
         verbose_name = 'Тип модуля'
         verbose_name_plural = 'Типы модулей'

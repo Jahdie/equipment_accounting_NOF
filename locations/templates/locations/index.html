@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% block vertical_menu %}
+    <div class="col-md-3">
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            {% for production in object_list %}
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading{{ production.pk }}">
+                        <button id="{{ production.pk }}" class="accordion-button collapsed" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse{{ production.pk }}" aria-expanded="false"
+                                aria-controls="flush-collapse{{ production.pk }}">
+                            {{ production.name }}
+                        </button>
+                    </h2>
+                </div>
+                <div id="flush-collapse{{ production.pk }}" class="accordion-collapse collapse"
+                     aria-labelledby="flush-heading{{ production.pk }}"
+                     data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"></div>
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
+
+     <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading{{ production.1 }}">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse{{ production.1 }}" aria-expanded="false"
+                                aria-controls="flush-collapse{{ production.1 }}">
+                            {{ production.0 }}
+                        </button>
+                    </h2>
+                    <div id="flush-collapse{{ production.1 }}" class="accordion-collapse collapse" aria-labelledby="flush-heading{{ production.1 }}"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                        </div>
+                    </div>
+                </div>
+            </div>

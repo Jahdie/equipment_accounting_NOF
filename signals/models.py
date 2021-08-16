@@ -9,6 +9,9 @@ class SignalTypes(BaseDictionaryModelAbstract):
         verbose_name = 'Тип сигнала'
         verbose_name_plural = 'Типы сигналов'
 
+    def __str__(self):
+        return self.name
+
 
 class AdjustableParameters(BaseDictionaryModelAbstract):
     class Meta:
