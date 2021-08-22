@@ -1,6 +1,6 @@
 from django.db import models
 from equipment_accounting_NOF.models import BaseModelAbstract, BaseDictionaryModelAbstract
-from plc.models import ModuleInPLC
+from technical_equipments.models import ModuleInPLC
 from factory_equipments.models import EquipmentNames, EquipmentTypes
 
 
@@ -24,7 +24,7 @@ class Signals(BaseDictionaryModelAbstract):
     signal_type = models.ForeignKey('SignalTypes', on_delete=models.PROTECT, null=True, verbose_name='Тип сигнала')
     adjustable_parameter = models.ForeignKey('AdjustableParameters', on_delete=models.PROTECT, null=True,
                                              verbose_name='Регулируемый параметр')
-    module = models.ForeignKey('plc.ModuleInPLC', on_delete=models.PROTECT, null=True,
+    module = models.ForeignKey('technical_equipments.ModuleInPLC', on_delete=models.PROTECT, null=True,
                                verbose_name='Модуль в станции')
     equipment = models.ForeignKey('factory_equipments.Equipments', on_delete=models.PROTECT, null=True,
                                   verbose_name='Оборудование')

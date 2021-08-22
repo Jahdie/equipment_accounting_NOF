@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import SwitchCabinetsListView
+from .views import switch_cabinets
 
 app_name = 'switch_cabinets'
 
 urlpatterns = [
-    path('', SwitchCabinetsListView, name='index'),
+    path('', switch_cabinets, name='index'),
 ]

@@ -6,7 +6,7 @@ window.onload = function () {
         // console.log(t_href.slot)
 
         $.ajax({
-            url: '/plc/' + t_href.name + '/' + t_href.id + '/' + t_href.slot + '/',
+            url: '/technical_equipments/' + t_href.name + '/' + t_href.id + '/' + t_href.slot + '/',
             success: function (data) {
                 $(".signals").html(data.result);
             }

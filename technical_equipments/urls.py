@@ -1,7 +1,7 @@
 from django.urls import path
 from .views import *
 
-app_name = 'plc'
+app_name = 'technical_equipments'
 
 urlpatterns = [
     path('', PLCListView.as_view(), name='index'),

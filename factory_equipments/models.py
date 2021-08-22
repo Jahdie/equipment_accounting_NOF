@@ -10,13 +10,6 @@ class EquipmentTypes(BaseDictionaryModelAbstract):
         verbose_name_plural = 'Типы оборудования'
 
 
-class DeviceTypes(BaseDictionaryModelAbstract):
-
-    class Meta:
-        verbose_name = 'Тип устройства'
-        verbose_name_plural = 'Типы устройств'
-
-
 class EquipmentNames(BaseDictionaryModelAbstract):
 
     class Meta:
@@ -38,9 +31,6 @@ class Equipments(BaseModelAbstract):
                                        verbose_name='Тип оборудования')
     automation_complex = models.ForeignKey('AutomationComplex', on_delete=models.SET_NULL, null=True,
                                            verbose_name='Комплекс автоматизации')
-    device_type = models.ForeignKey('DeviceTypes', on_delete=models.SET_NULL, null=True,
-                                    verbose_name='Тип устройства')
-    plc_name = models.ForeignKey('plc.PLC', on_delete=models.SET_NULL, null=True)
     location = models.ForeignKey('locations.Locations', on_delete=models.PROTECT, null=True,
                                  verbose_name='Местоположение')
 

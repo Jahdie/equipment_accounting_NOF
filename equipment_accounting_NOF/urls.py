@@ -17,13 +17,13 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
-from locations.views import LocationsListView
+from locations.views import locations
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', LocationsListView.as_view(), name='index'),
+    path('', locations, name='index'),
     path('locations/', include('locations.urls', namespace='locations')),
-    path('plc/', include('plc.urls', namespace='plc')),
+    path('technical_equipments/', include('technical_equipments.urls', namespace='technical_equipments')),
     path('switch_cabinets/', include('switch_cabinets.urls', namespace='switch_cabinets')),
     path('signals/', include('signals.urls', namespace='signals')),
     path('factory_equipments/', include('factory_equipments.urls', namespace='factory_equipment')),
