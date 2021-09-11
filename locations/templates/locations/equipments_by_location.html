@@ -14,14 +14,16 @@
         {% for technical_equipment in technical_equipments %}
             <tr>
                 <td>
-                    <a href="{% url "technical_equipments:modules_in_plc" technical_equipment.equipment_id %}">
-                        {{ technical_equipment.equipment_name }}
+                    <a href="{% url "technical_equipments:modules_in_plc" technical_equipment.technical_equipment_id %}">
+                        {{ technical_equipment.technical_equipment_name }}
                     </a>
                 </td>
-                <td>{{ technical_equipment.equipment_ip }}</td>
-                <td>{{ technical_equipment.equipment_type }}</td>
+                <td>{{ technical_equipment.technical_equipment_ip }}</td>
+                <td>{{ technical_equipment.technical_equipment_type }}</td>
                 <td>
-                    <a href="{% url "switch_cabinets:index" %}">{{ technical_equipment.switch_cabinet }}</a>
+                    <a href="{% url "switch_cabinets:switch_cabinet" technical_equipment.switch_cabinet_id %}">
+                        {{ technical_equipment.switch_cabinet_name }}
+                    </a>
                 </td>
             </tr>
         {% endfor %}

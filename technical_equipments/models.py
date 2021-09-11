@@ -42,9 +42,17 @@ class ModuleModels(BaseDictionaryModelAbstract):
 
 
 class RackModels(BaseDictionaryModelAbstract):
+    rack_type = models.ForeignKey('RackTypes', on_delete=models.PROTECT, null=True, verbose_name='Тип Rack')
+
     class Meta:
         verbose_name = 'Модель Rack'
         verbose_name_plural = 'Модели Rack'
+
+
+class RackTypes(BaseDictionaryModelAbstract):
+    class Meta:
+        verbose_name = 'Тип Rack'
+        verbose_name_plural = 'Типы Rack'
 
 
 class ModuleTypes(BaseDictionaryModelAbstract):

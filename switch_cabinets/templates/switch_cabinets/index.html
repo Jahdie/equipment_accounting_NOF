@@ -1,86 +1,73 @@
-<!doctype html>
-<html lang="ru">
-<head>
-    <!-- Обязательные метатеги -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% extends "base.html" %}
+{% load static %}
+{% block vertical_menu %}
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <div class="col-md-3">
+        <div class="btn-group">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="defaultDropdown"
+                    data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                Шкафы
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+                {% for item in switch_cabinets %}
+                    <li><a class="dropdown-item"
+                           href="{% url "switch_cabinets:switch_cabinet" item.id %}">{{ item.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
 
-    <title>{{ title }}</title>
-</head>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading{{ switches.switch_cabinet_id }}">
+                    <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse{{ switches.switch_cabinet_id }}"
+                            aria-expanded="false"
+                            aria-controls="flush-collapse{{ switches.switch_cabinet_id }}">
+                        {{ switches.switch_cabinet_name }}
+                    </button>
+                </h2>
+                <div id="flush-collapse{{ switches.switch_cabinet_id }}"
+                     class="accordion-collapse collapse"
+                     aria-labelledby="flush-heading{{ switches.switch_cabinet_id }}"
+                     data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="accordion accordion-flush" id="accordionFlushExample1">
+                            {% for switch in switches.switches %}
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header"
+                                        id="flush-heading{{ switch.switch_id }}">
+                                        <button name="{{ switches.switch_cabinet_id }}"
+                                                id="{{ switch.switch_id }}"
+                                                class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapse_switch_{{ switch.switch_id }}"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapse_switch_{{ switch.switch_id }}">
+                                            {{ switch.switch_model }}
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse_switch_{{ switch.switch_id }}"
+                                         class="accordion-collapse collapse"
+                                         aria-labelledby="flush-heading_switch_{{ switch.switch_id }}"
+                                         data-bs-parent="#accordionFlushExample1">
+                                    </div>
+                                </div>
 
-<body>
-<div class="container">
 
-    <!-- старт горизонтальное меню -->
-    <div class="row">
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-        </ul>
-
-    </div>
-    <!-- конец горизонтальное меню -->
-
-
-    <div class="row">
-        <!-- старт вертикальное меню -->
-        <div class="col-md-3">
-            <div class="nav">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- конец вертикальное меню -->
 
-        <!-- старт  контент -->
-        <div class="col-md-9">
-            {% block content %}
-                content
-            {% endblock %}
         </div>
-        <!-- конец контент -->
+
     </div>
-
-</div>
-
-
-<!-- Необязательный JavaScript; выберите один из двух! -->
-
-<!-- Вариант 1: пакет Bootstrap с Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
-
-<!-- Вариант 2: отдельные JS для Popper и Bootstrap -->
-<!--
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
--->
-</body>
-</html>
+{% endblock %}
+{% block content %}
+    {% include "switch_cabinets/ports_in_switch.html" %}
+{% endblock %}
+{% block script %}
+    <script src="{% static "js/switch_in_switch_cabinet.js" %}"></script>
+{% endblock %}

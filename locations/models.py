@@ -9,7 +9,6 @@ class Productions(BaseDictionaryModelAbstract):
 
 
 class Workshops(BaseDictionaryModelAbstract):
-    production = models.ForeignKey('Productions', on_delete=models.PROTECT, null=True, verbose_name='Производство')
 
     class Meta:
         verbose_name = 'Цех'
@@ -17,8 +16,6 @@ class Workshops(BaseDictionaryModelAbstract):
 
 
 class Compartments(BaseDictionaryModelAbstract):
-    production = models.ForeignKey('Productions', on_delete=models.PROTECT, null=True, verbose_name='Производство')
-    workshop = models.ForeignKey('Workshops', on_delete=models.PROTECT, null=True, verbose_name='Цех')
 
     class Meta:
         verbose_name = 'Участок'

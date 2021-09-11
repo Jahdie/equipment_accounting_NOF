@@ -1,0 +1,34 @@
+{% load static %}
+<div class="ports">
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Номер порта</th>
+            <th scope="col">Имя устройства</th>
+            <th scope="col">IP устройства</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for port in ports %}
+            <tr>
+                <td>
+                    <a href="#">
+                        {{ port.port_num }}
+                    </a>
+                </td>
+                <td>
+                    <a href="#">
+                        {{ port.technical_equipment.name }}
+                    </a>
+                </td>
+                <td>
+                    <a href="#">
+                        {{ port.technical_equipment.ip }}
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
