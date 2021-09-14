@@ -3,6 +3,7 @@
         <thead>
         <tr>
             <th scope="col">Наименование</th>
+            <th scope="col">Адрес</th>
             <th scope="col">Маркировка</th>
             <th scope="col">Оборудование</th>
             <th scope="col">Тип сигнала</th>
@@ -12,7 +13,8 @@
         {% for signal in signals %}
             <tr>
                 <td><a href="#">{{ signal.name }}</a></td>
-                <td>{{ signal.marking}}</td>
+                <td>{{ signal.input_reg }}</td>
+                <td>{{ signal.marking }}</td>
                 <td><a href="{% url "factory_equipments:index" %}">{{ signal.equipment.equipment_name }}</a></td>
                 <td>{{ signal.signal_type }}</td>
             </tr>

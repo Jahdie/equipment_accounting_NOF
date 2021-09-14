@@ -1,6 +1,7 @@
 from django.db import models
 from equipment_accounting_NOF.models import BaseModelAbstract, BaseDictionaryModelAbstract
 from locations.models import Locations
+from jsonfield import JSONField
 
 
 class TechnicalEquipments(BaseDictionaryModelAbstract):
@@ -18,13 +19,45 @@ class TechnicalEquipments(BaseDictionaryModelAbstract):
 class ModuleInPLC(BaseModelAbstract):
     rack = models.IntegerField(blank=True, verbose_name='Номер Rack')
     slot = models.IntegerField(blank=True, verbose_name='Номер Slot')
+    module_type = models.ForeignKey('ModuleTypes', on_delete=models.PROTECT, null=True, verbose_name='Тип модуля')
     module_model = models.ForeignKey('ModuleModels', on_delete=models.PROTECT, null=True, verbose_name='Модель модуля')
     rack_model = models.ForeignKey('RackModels', on_delete=models.PROTECT, null=True, verbose_name='Модель Rack')
     plc = models.ForeignKey('TechnicalEquipments', on_delete=models.PROTECT, null=True, verbose_name='ПЛК')
+    reference_address = JSONField(null=True, blank=True, default=None, verbose_name='Адрес')
 
-    class Meta:
-        verbose_name = 'Модуль в станции'
-        verbose_name_plural = 'Модули в станциях'
+    def get_module_id_by_signal_input_reg(self, signal_address):
+        NUMBERS = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+        module_id = None
+        modules_in_plc = ModuleInPLC.objects.all()
+
+        for module in modules_in_plc:
+            address_number = []
+            address_type = []
+            for address in module.reference_address:
+                # print(address['address'])
+                for letter in address['address']:
+                    address_list = []
+                    if letter not in NUMBERS and letter != '0':
+                        address_type.append(letter)
+                    else:
+                        address_number.append(letter)
+                for i in range(int(address['length'])):
+                    number = int(''.join(address_number))
+                    number = number + i
+                    address_final = ''.join(address_type) + '0' * (5 - len(str(number))) + str(number)
+                    address_list.append(address_final)
+
+                if signal_address in address_list:
+                    module_id = module.id
+                    # print(module.id)
+                # print(address_list)
+
+        return module_id
+
+
+class Meta:
+    verbose_name = 'Модуль в станции'
+    verbose_name_plural = 'Модули в станциях'
 
 
 class ControllerFamilies(BaseDictionaryModelAbstract):
