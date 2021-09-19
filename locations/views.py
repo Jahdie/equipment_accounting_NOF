@@ -24,6 +24,7 @@ def equipments_by_location(request, production_id, workshop_id, compartment_id):
             for item in TechnicalEquipments.objects.filter(location__production=production_id):
                 equipments_dict = {}
                 for item1 in item.switchports_set.filter(switch__switch_cabinet__location__production=production_id):
+                    equipments_dict.update({'project': item.project})
                     equipments_dict.update({'technical_equipment_name': item.name})
                     equipments_dict.update({'technical_equipment_id': item.id})
                     equipments_dict.update({'technical_equipment_ip': item.ip})
@@ -38,6 +39,7 @@ def equipments_by_location(request, production_id, workshop_id, compartment_id):
                                                            location__workshop=workshop_id):
                 equipments_dict = {}
                 for item1 in item.switchports_set.filter(technical_equipment=item.id):
+                    equipments_dict.update({'project': item.project})
                     equipments_dict.update({'technical_equipment_name': item.name})
                     equipments_dict.update({'technical_equipment_id': item.id})
                     equipments_dict.update({'technical_equipment_ip': item.ip})
@@ -53,6 +55,7 @@ def equipments_by_location(request, production_id, workshop_id, compartment_id):
                                                            location__compartment=compartment_id):
                 equipments_dict = {}
                 for item1 in item.switchports_set.filter(technical_equipment=item.id):
+                    equipments_dict.update({'project': item.project})
                     equipments_dict.update({'technical_equipment_name': item.name})
                     equipments_dict.update({'technical_equipment_id': item.id})
                     equipments_dict.update({'technical_equipment_ip': item.ip})

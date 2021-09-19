@@ -21,7 +21,8 @@ class AdjustableParameters(BaseDictionaryModelAbstract):
 
 class Signals(BaseDictionaryModelAbstract):
     marking = models.CharField(max_length=15, null=True, verbose_name='Маркировка')
-    input_reg = models.CharField(max_length=15, null=True, verbose_name='Адрес')
+    description = models.CharField(max_length=300, null=True, verbose_name='Описание')
+    address = models.CharField(max_length=15, null=True, verbose_name='Адрес')
     signal_type = models.ForeignKey('SignalTypes', on_delete=models.PROTECT, null=True, verbose_name='Тип сигнала')
     adjustable_parameter = models.ForeignKey('AdjustableParameters', on_delete=models.PROTECT, null=True,
                                              verbose_name='Регулируемый параметр')

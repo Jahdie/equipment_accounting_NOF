@@ -5,6 +5,7 @@ from jsonfield import JSONField
 
 
 class TechnicalEquipments(BaseDictionaryModelAbstract):
+    project = models.CharField(max_length=150, verbose_name='IP адресс', null=True)
     ip = models.CharField(max_length=15, verbose_name='IP адресс', null=True)
     technical_equipment_type = models.ForeignKey('TechnicalEquipmentTypes', on_delete=models.PROTECT, null=True,
                                                  verbose_name='Тип устройства')
@@ -26,16 +27,15 @@ class ModuleInPLC(BaseModelAbstract):
     reference_address = JSONField(null=True, blank=True, default=None, verbose_name='Адрес')
 
     @staticmethod
-    def get_module_id_by_signal_input_reg(signal_address):
+    def get_module_id_by_signal_input_reg(signal_address, project):
         """Получаем ID модуля к коттруму приинадлежит адрес сигнала"""
         module_id = None
-        modules_in_plc = ModuleInPLC.objects.all()
-
+        modules_in_plc = ModuleInPLC.objects.filter(plc__project=project)
         for module in modules_in_plc:
             address_number = []
             address_type = []
             for address in module.reference_address:
-                # print(address['address'])
+                # print(address['address'], address['length'])
                 for letter in address['address']:
                     address_list = []
                     if letter not in ['1', '2', '3', '4', '5', '6', '7', '8', '9'] and letter != '0':
