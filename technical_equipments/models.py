@@ -25,8 +25,9 @@ class ModuleInPLC(BaseModelAbstract):
     plc = models.ForeignKey('TechnicalEquipments', on_delete=models.PROTECT, null=True, verbose_name='ПЛК')
     reference_address = JSONField(null=True, blank=True, default=None, verbose_name='Адрес')
 
-    def get_module_id_by_signal_input_reg(self, signal_address):
-        NUMBERS = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+    @staticmethod
+    def get_module_id_by_signal_input_reg(signal_address):
+        """Получаем ID модуля к коттруму приинадлежит адрес сигнала"""
         module_id = None
         modules_in_plc = ModuleInPLC.objects.all()
 
@@ -37,7 +38,7 @@ class ModuleInPLC(BaseModelAbstract):
                 # print(address['address'])
                 for letter in address['address']:
                     address_list = []
-                    if letter not in NUMBERS and letter != '0':
+                    if letter not in ['1', '2', '3', '4', '5', '6', '7', '8', '9'] and letter != '0':
                         address_type.append(letter)
                     else:
                         address_number.append(letter)
@@ -54,10 +55,9 @@ class ModuleInPLC(BaseModelAbstract):
 
         return module_id
 
-
-class Meta:
-    verbose_name = 'Модуль в станции'
-    verbose_name_plural = 'Модули в станциях'
+    class Meta:
+        verbose_name = 'Модуль в станции'
+        verbose_name_plural = 'Модули в станциях'
 
 
 class ControllerFamilies(BaseDictionaryModelAbstract):
