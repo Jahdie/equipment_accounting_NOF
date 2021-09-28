@@ -14,10 +14,9 @@ def signals(request):
     # Signals.objects.all().delete()
     # ModuleInPLC.objects.all().delete()
     # TechnicalEquipments.objects.all().delete()
-
-
+    #
     # for path in hardware_report_parser.get_path_to_excel_file('D:\\config plc'):
-    #     cell_content_list = hardware_report_parser.get_list_from_hardware_report(path)
+    #     cell_content_list = hardware_report_parser.get_list_from_hardware_report(path, sheet_name='Лист1')
     #     rack_list = hardware_report_parser.get_list_of_lists_from_cell_content_list(cell_content_list)
     #     hardware_report_dict = hardware_report_parser.get_hardware_report_dict(rack_list)
     #     # print(hardware_report_dict)
@@ -70,18 +69,42 @@ def signals(request):
     #                                            reference_address=reference_address, plc_id=plc_id)
     #
     # for path in hardware_report_parser.get_path_to_excel_file('D:\\PROSCON'):
-    #     point_dict = hardware_report_parser.get_address_of_point(path)
+    #     point_dict = hardware_report_parser.get_address_of_proscon_point(path)
     #     for point in point_dict['point']:
     #         point_id = point['point_id']
     #         address = point['address']
     #         description = point['description']
     #         project = 'NOF' + point_id[0:3]
     #         # print(project)
-    #         module_id = ModuleInPLC.get_module_id_by_signal_input_reg(signal_address=address, project=project)
-    #         print(module_id, project)
+    #         module_id = ModuleInPLC.get_module_id_by_signal_input_reg(signal_address=address, project=project,
+    #                                                                   plc_name=None)
+    #         # print(module_id, project)
     #         if module_id is not None:
     #             if not Signals.objects.filter(name=point_id).exists():
     #                 Signals.objects.create(name=point_id, address=address, module_id=module_id, description=description)
-    #                     # print(module_id, input_reg, point_id)
+    #                 # print(module_id, input_reg, point_id)
+    # for path in hardware_report_parser.get_path_to_excel_file('D:\\variables'):
+    #     point_dict = hardware_report_parser.get_point_address(path)
+    #     for point in point_dict['point']:
+    #         point_id = point['point_id']
+    #         address = point['address']
+    #         description = point['description']
+    #         project = point['project']
+    #         plc_name = point['plc_name']
+    #         # print(project)
+    #         module_id = ModuleInPLC.get_module_id_by_signal_input_reg(signal_address=address, project=project,
+    #                                                                   plc_name=plc_name)
+    #         # print(module_id, project)
+    #         # print(plc_name)
+    #         if module_id is not None:
+    #             if not Signals.objects.filter(name=point_id, module_id=module_id).exists():
+    #                 Signals.objects.create(name=point_id, address=address, module_id=module_id,
+    #                                        description=description)
+    # #         #         # print(module_id, address, point_id, description)
 
+    for item in ModuleInPLC.objects.filter(plc__project='KMD7'):
+        module_id = ModuleInPLC.get_module_id_by_signal_input_reg('%I000065', project='KMD7', plc_name='AM1')
+        print(item.reference_address, module_id)
+    # for item in ModuleInPLC.objects.filter(plc__project='KMD7'):
+    #     print(item)
     return render(request, 'signals/index.html', context)

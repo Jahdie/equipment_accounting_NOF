@@ -3,6 +3,7 @@ import openpyxl
 
 
 def get_path_to_excel_file(directory):
+    """Получаем список путей до файлов"""
     path_list = []
     for root, dirs, files in os.walk(directory):
         for filename in files:
@@ -11,17 +12,19 @@ def get_path_to_excel_file(directory):
     return path_list
 
 
-def get_list_from_hardware_report(path):
+def get_list_from_hardware_report(path, sheet_name):
+    """Получаем список с контентом из файла"""
     # print(path)
     path_list = path.split('\\')
     # print(len(path_list), path_list)
+    # Получаем имя проекта из имени файла или из имени каталога
     if len(path_list) == 5:
         project = path_list[3]
     else:
         project = path_list[3][:-5]
     cell_content_list = []
     work_book_of_excel_file = openpyxl.load_workbook(path)
-    sheet_of_work_book = work_book_of_excel_file['Лист1']
+    sheet_of_work_book = work_book_of_excel_file[sheet_name]
     for cell in sheet_of_work_book['A']:
         if cell.value is not None:
             cell_content_str = str(cell.value)
@@ -31,8 +34,10 @@ def get_list_from_hardware_report(path):
 
 
 def get_list_of_lists_from_cell_content_list(cell_content_list):
+    """Формируем список списков из списка контента"""
     rack_index = 0
     rack_list = []
+    # Находим Rack, запоминаем индекс, находим следующее упоминание Rack, формируем список, добавляем в список.
     for index in range(len(cell_content_list)):
         rack_index_start = rack_index
         # print(cell_content_list[index])
@@ -46,6 +51,7 @@ def get_list_of_lists_from_cell_content_list(cell_content_list):
 
 
 def get_hardware_report_dict(rack_list):
+    """Формируем словарь с хардварным репортом"""
     hardware_report_dict = {
         'name': '',
         'ip': [],
@@ -87,8 +93,21 @@ def get_hardware_report_dict(rack_list):
                 if 'Used' not in item[1] and '3RD' not in item[1]:
                     # print(item[1])
                     slot_model = item[1][0][:-1]
+                    # print(slot_model[0:2])
+                    if slot_model[0:2] != 'IC':
+                        slot_model = ' '.join(item[1][0:3])
+                        slot_model = slot_model[:-1]
+                        slot_type = ' '.join(item[1][3:])
+                        if slot_model[0:2] == 'HE':
+                            slot_model = slot_model[:-1]
+                            slot_type = ' '.join(item[1][1:])
+                        #     print(slot_model)
+                        #     print(slot_type)
+                        # print(slot_model, slot_type)
                     slot_type = ' '.join(item[1][2:])
+                    # print(slot_type)
                     if item[1][0][-1] != ',':
+                        # print(item)
                         slot_model = item[1][0]
                     # print(slot_model, slot_type)
                     hardware_report_dict['racks'][int(rack_number)]['slots'].append(
@@ -121,7 +140,8 @@ def get_hardware_report_dict(rack_list):
     return hardware_report_dict
 
 
-def get_address_of_point(path):
+def get_address_of_proscon_point(path):
+    """Получаем из файла c Proscon переменными наименование точки, её адресс и описание"""
     point_dict = {'point': []}
     work_book_of_excel_file = openpyxl.load_workbook(path)
     sheet_of_work_book = work_book_of_excel_file.active
@@ -136,6 +156,28 @@ def get_address_of_point(path):
                     # print(cell_content_str, row[0].value)
                     point_dict['point'].append(
                         {'point_id': row[0].value, 'address': cell_content_str, 'description': row[1].value})
+    return point_dict
+
+
+def get_point_address(path):
+    point_dict = {'point': []}
+    work_book_of_excel_file = openpyxl.load_workbook(path)
+    sheet_of_work_book = work_book_of_excel_file.active
+    for row in sheet_of_work_book.iter_rows():
+        if row[15].value is not None and row[15].value[0] == '%':
+            description = row[2].value
+            point_id = row[0].value
+            address = row[15].value
+            # print(path.split('\\'))
+            plc_name = None
+            project = path.split('\\')[-1][:path.split('\\')[-1].index('.')]
+            if len(path.split('\\')) == 5:
+                project = path.split('\\')[3]
+                plc_name = path.split('\\')[-1][:path.split('\\')[-1].index('.')]
+            # print(project)
+            # print(point_id, description, address, project, plc_name)
+            point_dict['point'].append(
+                {'point_id': point_id, 'address': address, 'description': description, 'project': project, 'plc_name': plc_name})
     return point_dict
 # for path in get_path_to_excel_file('D:\\config plc'):
 #     cell_content_list = get_list_from_hardware_report(path)

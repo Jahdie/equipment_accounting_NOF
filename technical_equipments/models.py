@@ -27,32 +27,42 @@ class ModuleInPLC(BaseModelAbstract):
     reference_address = JSONField(null=True, blank=True, default=None, verbose_name='Адрес')
 
     @staticmethod
-    def get_module_id_by_signal_input_reg(signal_address, project):
+    def get_module_id_by_signal_input_reg(signal_address, project, plc_name):
         """Получаем ID модуля к коттруму приинадлежит адрес сигнала"""
         module_id = None
-        modules_in_plc = ModuleInPLC.objects.filter(plc__project=project)
+        # print(project, plc_name)
+        if plc_name is not None:
+            modules_in_plc = ModuleInPLC.objects.filter(plc__project=project, plc__name=plc_name)
+            # print(modules_in_plc)
+        else:
+            modules_in_plc = ModuleInPLC.objects.filter(plc__project=project)
+            # print(modules_in_plc)
         for module in modules_in_plc:
-            address_number = []
-            address_type = []
-            for address in module.reference_address:
-                # print(address['address'], address['length'])
-                for letter in address['address']:
-                    address_list = []
-                    if letter not in ['1', '2', '3', '4', '5', '6', '7', '8', '9'] and letter != '0':
-                        address_type.append(letter)
-                    else:
-                        address_number.append(letter)
-                for i in range(int(address['length'])):
-                    number = int(''.join(address_number))
-                    number = number + i
-                    address_final = ''.join(address_type) + '0' * (5 - len(str(number))) + str(number)
-                    address_list.append(address_final)
-
-                if signal_address in address_list:
-                    module_id = module.id
-                    # print(module.id)
-                # print(address_list)
-
+            # for address in module.reference_address:
+            if not not module.reference_address:
+                for address in module.reference_address:
+                    # print(address)
+                    address_numbers = []
+                    address_type = []
+                    signal_address_type = []
+                    signal_address_numbers = []
+                    for symbol in address['address']:
+                        if symbol not in ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']:
+                            address_type.append(symbol)
+                        else:
+                            address_numbers.append(symbol)
+                    for symbol in signal_address:
+                        if symbol not in ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']:
+                            signal_address_type.append(symbol)
+                        else:
+                            signal_address_numbers.append(symbol)
+                    if address_type == signal_address_type:
+                        # print(address_type, signal_address_type)
+                        first_address_in_range = int(''.join(address_numbers))
+                        last_address_in_range = first_address_in_range + int(address['length'])
+                        sought_address = int(''.join(signal_address_numbers))
+                        if first_address_in_range <= sought_address <= last_address_in_range:
+                            module_id = module.id
         return module_id
 
     class Meta:
