@@ -7,23 +7,36 @@ from factory_equipments.models import *
 from technical_equipments.models import *
 
 
-def switch_cabinets(request):
+def switch_cabinets(request, switch_cabinet_id):
     context = {}
     switch_cabinet_dicts_list = []
-
-    for item in SwitchCabinets.objects.all():
+    for el in SwitchCabinets.objects.filter(id=switch_cabinet_id):
         switch_dicts_list = []
         switch_cabinet_dict = {}
-        switch_cabinet_dict.update(
-            {'switch_cabinet_name': item.name, 'switch_cabinet_id': item.id, 'switches': []})
-        switch_cabinet_dicts_list.append(switch_cabinet_dict)
-        for item1 in Switches.objects.filter(switch_cabinet=item.id):
-            switches_dict = {}
-            switch_dicts_list.append(switches_dict)
-            print(item1.ip)
-            switches_dict.update({'switch_model': item1.model, 'switch_ip': item1.ip})
-            switch_cabinet_dict.update({'switches': switch_dicts_list})
+        switch_cabinet_dict.update({'switch_cabinet_id': el.id})
+        switch_cabinet_dict.update({'switch_cabinet_name': el.name})
 
-    print(switch_cabinet_dicts_list)
+        for item in Switches.objects.filter(switch_cabinet=el.id):
+            switch_dict = {}
+            switch_dict.update({'switch_model': item.model})
+            switch_dict.update({'switch_id': item.id})
+            switch_dict.update({'switch_ip': item.ip})
+
+            switch_dicts_list.append(switch_dict)
+            switch_cabinet_dict.update({'switches': switch_dicts_list})
+    context.update({'switches': switch_cabinet_dict})
+    context.update({'switch_cabinets': SwitchCabinets.objects.all()})
+    print(switch_cabinet_dict)
+    print(context['switches'])
 
     return render(request, 'switch_cabinets/index.html', context)
+
+
+def ports_in_switch(request, switch_cabinet_id, switch_id):
+    context = {}
+    equipments_dict_list = []
+    if request.is_ajax():
+        context.update({'ports': SwitchPorts.objects.filter(switch_id=switch_id)})
+        result = render_to_string('switch_cabinets/ports_in_switch.html', context)
+        print(context)
+        return JsonResponse({'result': result})

@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import SignalsListView
+from .views import signals
 
 app_name = 'signals'
 
 urlpatterns = [
-    path('', SignalsListView.as_view(), name='index'),
+    path('', signals, name='index'),
 ]
