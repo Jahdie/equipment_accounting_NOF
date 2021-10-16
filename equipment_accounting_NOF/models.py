@@ -4,7 +4,7 @@ from django.db import models
 class BaseModelAbstract(models.Model):
     note = models.TextField(blank=True, verbose_name='Примечание')
     date_created = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
-    date_deleted = models.DateTimeField(auto_now=True, verbose_name='Дата удаления')
+    date_deleted = models.DateTimeField(blank=True, null=True, verbose_name='Дата удаления')
     date_updated = models.DateTimeField(auto_now=True, verbose_name='Дата обновления')
 
     class Meta:

@@ -4,5 +4,5 @@ from .views import SignalsListView
 app_name = 'signals'
 
 urlpatterns = [
-    path('', SignalsListView, name='index'),
+    path('', SignalsListView.as_view(), name='index'),
 ]

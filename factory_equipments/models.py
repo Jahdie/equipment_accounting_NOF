@@ -1,4 +1,6 @@
 from equipment_accounting_NOF.models import BaseModelAbstract, BaseDictionaryModelAbstract
+from django.db import models
+from locations.models import Locations
 
 
 class EquipmentTypes(BaseDictionaryModelAbstract):
@@ -14,3 +16,24 @@ class EquipmentNames(BaseDictionaryModelAbstract):
         verbose_name = 'Наименование оборудования'
         verbose_name_plural = 'Наименования оборудования'
 
+
+class AutomationComplex(BaseDictionaryModelAbstract):
+
+    class Meta:
+        verbose_name = 'Комплекс автоматизации'
+        verbose_name_plural = 'Комплексы автоматизации'
+
+
+class Equipments(BaseModelAbstract):
+    equipment_name = models.ForeignKey('EquipmentNames', on_delete=models.SET_NULL, null=True,
+                                       verbose_name='Имя оборудования')
+    equipment_type = models.ForeignKey('EquipmentTypes', on_delete=models.SET_NULL, null=True,
+                                       verbose_name='Тип оборудования')
+    automation_complex = models.ForeignKey('AutomationComplex', on_delete=models.SET_NULL, null=True,
+                                           verbose_name='Комплекс автоматизации')
+    location = models.ForeignKey('locations.Locations', on_delete=models.PROTECT, null=True,
+                                 verbose_name='Местоположение')
+
+    class Meta:
+        verbose_name = 'Обоорудование'
+        verbose_name_plural = 'Оборудование'

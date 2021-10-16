@@ -3,13 +3,13 @@ from equipment_accounting_NOF.models import BaseModelAbstract, BaseDictionaryMod
 
 
 class Productions(BaseDictionaryModelAbstract):
-
     class Meta:
         verbose_name = 'Производство'
         verbose_name_plural = 'Производства'
 
 
 class Workshops(BaseDictionaryModelAbstract):
+    production = models.ForeignKey('Productions', on_delete=models.PROTECT, null=True, verbose_name='Производство')
 
     class Meta:
         verbose_name = 'Цех'
@@ -17,6 +17,8 @@ class Workshops(BaseDictionaryModelAbstract):
 
 
 class Compartments(BaseDictionaryModelAbstract):
+    production = models.ForeignKey('Productions', on_delete=models.PROTECT, null=True, verbose_name='Производство')
+    workshop = models.ForeignKey('Workshops', on_delete=models.PROTECT, null=True, verbose_name='Цех')
 
     class Meta:
         verbose_name = 'Участок'
@@ -24,11 +26,15 @@ class Compartments(BaseDictionaryModelAbstract):
 
 
 class Locations(BaseModelAbstract):
-    production_id = models.ForeignKey('Productions', on_delete=models.PROTECT, null=True, verbose_name='Производство',
-                                      related_name='Productions')
-    workshop_id = models.ForeignKey('Workshops', on_delete=models.PROTECT, null=True, verbose_name='Цех')
-    compartment_id = models.ForeignKey('Compartments', on_delete=models.PROTECT, null=True, verbose_name='Участок')
+    production = models.ForeignKey('Productions', on_delete=models.PROTECT, null=True, verbose_name='Производство',
+                                   related_name='Productions')
+    workshop = models.ForeignKey('Workshops', on_delete=models.PROTECT, null=True, verbose_name='Цех')
+    compartment = models.ForeignKey('Compartments', on_delete=models.PROTECT, null=True, verbose_name='Участок')
+    phone_number = models.CharField(max_length=15, verbose_name='Номер телефона', blank=True)
     photo_location = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
+
+    # def __str__(self):
+    #     return self.workshop_id
 
     class Meta:
         verbose_name = 'Местоположение оборудования'

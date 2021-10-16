@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import *
+MODELS_LIST = [EquipmentTypes, EquipmentNames, AutomationComplex, Equipments]
 
-# Register your models here.
+admin.site.register(MODELS_LIST)

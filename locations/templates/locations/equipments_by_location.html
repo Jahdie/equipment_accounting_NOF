@@ -1,0 +1,30 @@
+{% load static %}
+<div class="equipments">
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Наименование устройства</th>
+            <th scope="col">IP адрес</th>
+            <th scope="col">Тип устройства</th>
+            <th scope="col">Номер шкафа</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for technical_equipment in technical_equipments %}
+            <tr>
+                <td>
+                    <a href="{% url "technical_equipments:modules_in_plc" technical_equipment.equipment_id %}">
+                        {{ technical_equipment.equipment_name }}
+                    </a>
+                </td>
+                <td>{{ technical_equipment.equipment_ip }}</td>
+                <td>{{ technical_equipment.equipment_type }}</td>
+                <td>
+                    <a href="{% url "switch_cabinets:index" %}">{{ technical_equipment.switch_cabinet }}</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>

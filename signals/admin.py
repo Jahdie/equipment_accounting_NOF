@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import *
 
-# Register your models here.
+MODELS_LIST = [Signals, SignalTypes, AdjustableParameters]
+
+admin.site.register(MODELS_LIST)

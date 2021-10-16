@@ -1,0 +1,258 @@
+[
+  {
+    "model": "signals.signaltypes",
+    "pk": 1,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:03:38.793Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:04:10.366Z",
+      "name": "Аналоговый выход",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "signals.signaltypes",
+    "pk": 2,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:03:57.515Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:03:57.515Z",
+      "name": "Аналоговый вход",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "signals.signaltypes",
+    "pk": 3,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:04:26.133Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:04:26.133Z",
+      "name": "Дискретный вход",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "signals.signaltypes",
+    "pk": 4,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:04:38.220Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:04:38.220Z",
+      "name": "Дискретный выход",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "signals.adjustableparameters",
+    "pk": 1,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:24:11.898Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:24:11.898Z",
+      "name": "Уровень",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "signals.adjustableparameters",
+    "pk": 2,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:24:19.984Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:24:19.984Z",
+      "name": "Воздух",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "signals.adjustableparameters",
+    "pk": 3,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:24:31.496Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:24:31.496Z",
+      "name": "Давление",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "signals.adjustableparameters",
+    "pk": 4,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:25:53.353Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:25:53.353Z",
+      "name": "Состояние",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "signals.adjustableparameters",
+    "pk": 5,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:26:01.598Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:26:01.598Z",
+      "name": "ДМДК",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "signals.adjustableparameters",
+    "pk": 6,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:26:10.899Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:26:10.899Z",
+      "name": "Т-80",
+      "photo_location": ""
+    }
+  },
+  {
+    "model": "signals.signals",
+    "pk": 1,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:34:22.999Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:34:22.999Z",
+      "name": "AC1_L001",
+      "photo_location": "",
+      "marking": "7-18  7-17",
+      "signal_type": 1,
+      "adjustable_parameter": 1,
+      "module": 13,
+      "equipment": 1
+    }
+  },
+  {
+    "model": "signals.signals",
+    "pk": 2,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:35:32.241Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:35:32.241Z",
+      "name": "AC1_L002",
+      "photo_location": "",
+      "marking": "7-22  7-21",
+      "signal_type": 1,
+      "adjustable_parameter": 2,
+      "module": 13,
+      "equipment": 3
+    }
+  },
+  {
+    "model": "signals.signals",
+    "pk": 3,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:36:09.071Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:36:09.071Z",
+      "name": "AC1_L003",
+      "photo_location": "",
+      "marking": "2N-1 2N-2",
+      "signal_type": 1,
+      "adjustable_parameter": 3,
+      "module": 13,
+      "equipment": 2
+    }
+  },
+  {
+    "model": "signals.signals",
+    "pk": 4,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:38:49.347Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:38:49.347Z",
+      "name": "AC1_M003",
+      "photo_location": "",
+      "marking": "6-19  6-20",
+      "signal_type": 2,
+      "adjustable_parameter": 1,
+      "module": 10,
+      "equipment": 1
+    }
+  },
+  {
+    "model": "signals.signals",
+    "pk": 5,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:39:26.074Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:39:26.074Z",
+      "name": "AC1_M004",
+      "photo_location": "",
+      "marking": "C2-34-35",
+      "signal_type": 2,
+      "adjustable_parameter": 2,
+      "module": 10,
+      "equipment": 3
+    }
+  },
+  {
+    "model": "signals.signals",
+    "pk": 6,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:40:02.010Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:40:02.010Z",
+      "name": "AC1_M007",
+      "photo_location": "",
+      "marking": "C2-26 C2-27",
+      "signal_type": 2,
+      "adjustable_parameter": 3,
+      "module": 10,
+      "equipment": 2
+    }
+  },
+  {
+    "model": "signals.signals",
+    "pk": 7,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:42:10.514Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:42:10.514Z",
+      "name": "AC1_I013",
+      "photo_location": "",
+      "marking": "C5-39-3",
+      "signal_type": 3,
+      "adjustable_parameter": 4,
+      "module": 9,
+      "equipment": 2
+    }
+  },
+  {
+    "model": "signals.signals",
+    "pk": 8,
+    "fields": {
+      "note": "",
+      "date_created": "2021-07-28T14:44:38.305Z",
+      "date_deleted": null,
+      "date_updated": "2021-07-28T14:44:38.305Z",
+      "name": "AC1_R003",
+      "photo_location": "",
+      "marking": "2-13",
+      "signal_type": 4,
+      "adjustable_parameter": 5,
+      "module": 14,
+      "equipment": 3
+    }
+  }
+]

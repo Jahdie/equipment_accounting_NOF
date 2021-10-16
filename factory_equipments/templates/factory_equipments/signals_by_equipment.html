@@ -1,0 +1,24 @@
+{% load static %}
+<div class="signals">
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Наименование сигнала</th>
+            <th scope="col">Тип сигнала</th>
+            <th scope="col">Наименование PLC</th>
+            <th scope="col">Имя оборудования</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for signal in signals %}
+                <tr>
+                    <td>{{ signal.name }}</td>
+                    <td>{{ signal.signal_type.name }}</td>
+                    <td><a href="{% url "technical_equipments:modules_in_plc" signal.module.plc.id %}">{{ signal.module.plc.name }}</a><td>
+                    <td>{{ signal.equipment.equipment_name.name }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

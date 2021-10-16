@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% load static %}
+{% block vertical_menu %}
+    {#    {% for key, values in locations.items %}#}
+    {#        <p>Прозводство: {{ key.0 }}</p>#}
+    {#        {% for value in values %}#}
+    {#            {% for item1, item2 in value.items %}#}
+    {#                <p>Цех: {{ item1.0 }}</p>#}
+    {#                {% for item in item2 %}#}
+    {#                    <p>Участок: {{ item.0 }}</p>#}
+    {#                {% endfor %}#}
+    {#            {% endfor %}#}
+    {##}
+    {#        {% endfor %}#}
+    {#        <p>******************</p>#}
+    {#    {% endfor %}#}
+    <div class="col-md-3">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            {% for production in locations %}
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading_production_{{ production.production_id }}">
+                        <button id="{{ production.production_id }}" production_id="{{ production.production_id }}" workshop_id="0"
+                                compartment_id="0" class="accordion-button collapsed" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse_production_{{ production.production_id  }}" aria-expanded="false"
+                                aria-controls="flush-collapse_production_{{ production.production_id  }}">
+                            {{ production.production_name  }}
+                        </button>
+                    </h2>
+                    <div id="flush-collapse_production_{{ production.production_id }}" class="accordion-collapse collapse"
+                         aria-labelledby="flush-heading_production_{{ production.production_id }}"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample1">
+                                {% for workshop in production.workshops %}
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-heading_workshop_{{ workshop.workshop_id }}">
+                                                <button id="{{ workshop.1 }}" production_id="{{ production.production_id }}"
+                                                        workshop_id="{{ workshop.workshop_id }}" compartment_id="0"
+                                                        class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapse_workshop_{{ workshop.workshop_id }}"
+                                                        aria-expanded="false"
+                                                        aria-controls="flush-collapse_workshop_{{ workshop.workshop_id }}">
+                                                    {{ workshop.workshop_name }}
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapse_workshop_{{ workshop.workshop_id }}"
+                                                 class="accordion-collapse collapse"
+                                                 aria-labelledby="flush-heading_workshop_{{ workshop.workshop_id }}"
+                                                 data-bs-parent="#accordionFlushExample1">
+                                                <div class="accordion-body">
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample2">
+                                                        {% for compartment in workshop.compartments %}
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header"
+                                                                    id="flush-heading_compartment_{{ compartment.compartment_id }}">
+                                                                    <button id="{{ compartment.compartment_id }}"
+                                                                            production_id="{{ production.production_id }}"
+                                                                            workshop_id="{{ workshop.workshop_id}}"
+                                                                            compartment_id="{{ compartment.compartment_id }}"
+                                                                            class="accordion-button collapsed"
+                                                                            type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#flush-collapse_compartment_{{ compartment.compartment_id }}"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="flush-collapse_compartment_{{ compartment.compartment_id }}">
+                                                                        {{ compartment.compartment_name }}
+                                                                    </button>
+                                                                </h2>
+                                                                <div id="flush-collapse_compartment_{{ compartment.compartment_id }}"
+                                                                     class="accordion-collapse collapse"
+                                                                     aria-labelledby="flush-heading_compartment_{{ compartment.compartment_id }}"
+                                                                     data-bs-parent="#accordionFlushExample2">
+                                                                </div>
+                                                            </div>
+                                                        {% endfor %}
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            {% endfor %}
+        </div>
+
+    </div>
+{% endblock %}
+{% block content %}
+    {% include "locations/equipments_by_location.html" %}
+{% endblock %}
+{% block script %}
+    <script src="{% static "js/locations.js" %}"></script>
+{% endblock %}
